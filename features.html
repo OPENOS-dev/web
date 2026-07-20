@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="OpenOS 系统特性 - 验证启动、TPM安全、无缝更新、容器虚拟化、现代图形栈、双构建系统">
+<title>系统特性 - OpenOS</title>
+<link rel="icon" type="image/svg+xml" href="openos-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img class="nav-logo-icon" src="openos-logo.svg" alt="OpenOS">
+      OpenOS
+    </a>
+    <button class="nav-toggle" aria-label="菜单" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="features.html" class="active">系统特性</a></li>
+      <li><a href="projects.html">核心项目</a></li>
+      <li><a href="build.html">快速开始</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page-content">
+  <section>
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-number">// 01 · Features</span>
+        <h2>核心特性</h2>
+        <p>继承 ChromiumOS 的完整技术栈并进行定制化改造，形成独立的开源操作系统发行版。</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card-icon">L</div>
+          <h3>验证启动</h3>
+          <p>基于 vboot_reference 的 Verified Boot 机制，从固件到内核的完整信任链，确保系统未被篡改。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">T</div>
+          <h3>TPM 安全</h3>
+          <p>集成 chaps、trunks、tpm_manager 等安全组件，支持硬件安全芯片加密用户数据和凭据。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">U</div>
+          <h3>无缝更新</h3>
+          <p>update_engine 实现 A/B 分区无缝系统更新，后台静默下载，重启即可切换到新版本。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">V</div>
+          <h3>容器与虚拟机</h3>
+          <p>内置 crosvm KVM 虚拟机监视器，支持 Android Runtime Container 和 Linux 容器双重应用生态。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">G</div>
+          <h3>现代图形栈</h3>
+          <p>集成 Mesa 多版本图形驱动和 libva 视频加速，minigbm 高效管理图形缓冲区。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-icon">B</div>
+          <h3>双构建系统</h3>
+          <p>Portage/Gentoo 包管理 + Bazel 现代构建系统双轨并行，Python Chromite 工具链驱动整个流程。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-brand">
+      <img class="footer-brand-icon" src="openos-logo.svg" alt="OpenOS">
+      OpenOS
+    </a>
+    <p class="footer-tagline">基于 ChromiumOS 的开源操作系统，由 OPENOS-dev 维护。</p>
+    <div class="footer-links">
+      <a href="https://github.com/OPENOS-dev" target="_blank" rel="noopener">GitHub</a>
+      <a href="about.html">关于我们</a>
+      <a href="https://github.com/OPENOS-dev/NOTHING-UI-1" target="_blank" rel="noopener">NOTHING UI</a>
+      <a href="https://discord.gg/xj6VCg7Na" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2026 OPENOS-dev. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

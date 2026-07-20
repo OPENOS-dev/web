@@ -1,0 +1,58 @@
+- generic [active] [ref=f2e1]:
+  - navigation [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "OS OpenOS" [ref=f2e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f2e5]: OS
+        - text: OpenOS
+      - list [ref=f2e6]:
+        - listitem [ref=f2e7]:
+          - link "首页" [ref=f2e8] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=f2e9]:
+          - link "系统特性" [ref=f2e10] [cursor=pointer]:
+            - /url: features.html
+        - listitem [ref=f2e11]:
+          - link "核心项目" [ref=f2e12] [cursor=pointer]:
+            - /url: projects.html
+        - listitem [ref=f2e13]:
+          - link "快速开始" [ref=f2e14] [cursor=pointer]:
+            - /url: build.html
+        - listitem [ref=f2e15]:
+          - link "关于我们" [ref=f2e16] [cursor=pointer]:
+            - /url: about.html
+  - generic [ref=f2e17]:
+    - generic [ref=f2e18]: 基于 ChromiumOS · release-R151
+    - heading "为热爱打造 开源 的 操作系统" [level=1] [ref=f2e20]
+    - paragraph [ref=f2e21]: 继承 ChromiumOS 的完整技术栈，由 Open-code-Studio 维护。覆盖固件到浏览器全栈，支持 142 种硬件平台，提供安全、稳定、高效的开源操作系统发行版。
+    - generic [ref=f2e22]:
+      - link "查看项目" [ref=f2e23] [cursor=pointer]:
+        - /url: projects.html
+      - link "GitHub 组织" [ref=f2e26] [cursor=pointer]:
+        - /url: https://github.com/Open-code-Studio
+    - generic [ref=f2e27]:
+      - generic [ref=f2e28]: ChromiumOS
+      - generic [ref=f2e29]: Linux v6.x
+      - generic [ref=f2e30]: coreboot
+      - generic [ref=f2e31]: Bazel
+      - generic [ref=f2e32]: Chromite
+      - generic [ref=f2e33]: TypeScript
+      - generic [ref=f2e34]: 跨平台
+      - generic [ref=f2e35]: 开源
+  - contentinfo [ref=f2e36]:
+    - generic [ref=f2e37]:
+      - link "OS OpenOS" [ref=f2e38] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f2e39]: OS
+        - text: OpenOS
+      - paragraph [ref=f2e40]: 基于 ChromiumOS 的开源操作系统，由 Open-code-Studio 维护。
+      - generic [ref=f2e41]:
+        - link "GitHub" [ref=f2e42] [cursor=pointer]:
+          - /url: https://github.com/Open-code-Studio
+        - link "关于我们" [ref=f2e43] [cursor=pointer]:
+          - /url: about.html
+        - link "NOTHING UI" [ref=f2e44] [cursor=pointer]:
+          - /url: https://github.com/Open-code-Studio/NOTHING-UI-1
+        - link "Discord" [ref=f2e45] [cursor=pointer]:
+          - /url: https://discord.gg/xj6VCg7Na
+      - paragraph [ref=f2e47]: © 2026 Open Code Studio. All rights reserved.
