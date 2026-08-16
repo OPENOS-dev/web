@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OpenOS 核心项目 - OpenOS Core、Chromite Build、固件、crosvm、NOTHING UI、开发站点">
+<meta name="description" content="OpenOS 核心项目 - OPENOS 操作系统、OAK 安全模块、OPENUI 桌面、OPT 包管理器、NUI 设计规范、OPL 许可证">
 <title>核心项目 - OpenOS</title>
 <link rel="icon" type="image/svg+xml" href="openos-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,29 +40,110 @@
       <div class="section-header">
         <span class="section-number">// 02 · Projects</span>
         <h2>核心项目</h2>
-        <p>由 OPENOS-dev 维护的 OpenOS 生态核心组件，涵盖构建工具、平台服务和虚拟化方案。</p>
+        <p>OPENOS 生态的核心组件，涵盖操作系统、安全模块、桌面环境与工具链。</p>
       </div>
+
+      <!-- 项目列表 -->
+      <div class="projects-list">
+
+        <!-- OPENOS 核心 -->
         <div class="project-card">
           <div class="project-card-header">
-            <h3>OpenOS Dev Web</h3>
+            <h3>OPENOS 操作系统</h3>
             <span class="project-status status-active">active</span>
           </div>
-          <p>OpenOS 官方网站与文档站点，介绍项目特性、技术栈和构建指南。</p>
+          <p>基于 Arch Linux 的操作系统核心，包含内核补丁、安全模块、桌面环境与包管理前端。</p>
           <div class="project-card-tags">
-            <span class="project-tag">website</span>
-            <span class="project-tag">docs</span>
+            <span class="project-tag">内核</span>
+            <span class="project-tag">Arch Linux</span>
+            <span class="project-tag">Wayland</span>
           </div>
         </div>
+
+        <!-- OAK -->
         <div class="project-card">
           <div class="project-card-header">
-            <h3>努力更新中</h3>
+            <h3>OAK 安全基座</h3>
             <span class="project-status status-active">active</span>
           </div>
-          <p>OpenOS 主体都没好,你为啥着急要网页啊qwq?</p>
+          <p>开放平台非对称加密技术，内核级 LSM 模块，支持进程保护、OAK-Seal 硬盘加密与 OPEN RSA 协议。</p>
           <div class="project-card-tags">
-            <span class="project-tag">何意味</span>
+            <span class="project-tag">安全</span>
+            <span class="project-tag">内核模块</span>
+            <span class="project-tag">LSM</span>
           </div>
         </div>
+
+        <!-- OPENUI -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>OPENUI 桌面环境</h3>
+            <span class="project-status status-active">active</span>
+          </div>
+          <p>基于 Wayland + wlroots 与 Qt/QML 的桌面外壳，遵循 NUI 设计规范，默认无广告、键盘优先。</p>
+          <div class="project-card-tags">
+            <span class="project-tag">Wayland</span>
+            <span class="project-tag">Qt</span>
+            <span class="project-tag">NUI</span>
+          </div>
+        </div>
+
+        <!-- OPT -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>OPT 包管理器</h3>
+            <span class="project-status status-planning">planning</span>
+          </div>
+          <p>统一包管理前端，支持 pacman 与 apt 双后端，提供软件命名空间隔离、首次启动自动配置。</p>
+          <div class="project-card-tags">
+            <span class="project-tag">包管理</span>
+            <span class="project-tag">pacman</span>
+            <span class="project-tag">apt</span>
+          </div>
+        </div>
+
+        <!-- NUI 规范 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>NUI 设计规范</h3>
+            <span class="project-status status-active">active</span>
+          </div>
+          <p>NOTHING UI 设计规范，定义 OPENOS 桌面交互、视觉风格与设计令牌。NUI1/NUI2 已开源。</p>
+          <div class="project-card-tags">
+            <span class="project-tag">设计规范</span>
+            <span class="project-tag">UI/UX</span>
+            <span class="project-tag">开源</span>
+          </div>
+        </div>
+
+        <!-- OPL -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>OPL 许可证</h3>
+            <span class="project-status status-active">active</span>
+          </div>
+          <p>OPENOS-PROJECT-LICENSE，保障代码自由、设备自由、体验自由与操作自由的专有开源许可证。</p>
+          <div class="project-card-tags">
+            <span class="project-tag">许可证</span>
+            <span class="project-tag">开源</span>
+            <span class="project-tag">OPL</span>
+          </div>
+        </div>
+
+        <!-- 软件命名空间隔离 -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3>软件命名空间隔离 (SNI)</h3>
+            <span class="project-status status-planning">planning</span>
+          </div>
+          <p>内核级轻量虚拟化，为每个应用提供独立文件系统视图，调用耗时小于 1 秒，资源占用极低。</p>
+          <div class="project-card-tags">
+            <span class="project-tag">虚拟化</span>
+            <span class="project-tag">内核</span>
+            <span class="project-tag">隔离</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -74,7 +155,7 @@
       <img class="footer-brand-icon" src="openos-logo.svg" alt="OpenOS">
       OpenOS
     </a>
-    <p class="footer-tagline">基于 ARCH Liunx 的开源操作系统，由 OPENOS-dev 维护。</p>
+    <p class="footer-tagline">基于 Arch Linux 的开源操作系统，由 OPENOS-dev 维护。</p>
     <div class="footer-links">
       <a href="https://github.com/OPENOS-dev" target="_blank" rel="noopener">GitHub</a>
       <a href="about.html">关于我们</a>
