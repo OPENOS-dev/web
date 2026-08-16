@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OpenOS 系统特性 - 验证启动、TPM安全、无缝更新、容器虚拟化、现代图形栈、双构建系统">
+<meta name="description" content="OpenOS 系统特性 - OAK 安全基座、OPENUI 桌面、双包管理、软件命名空间隔离、跨平台支持">
 <title>系统特性 - OpenOS</title>
 <link rel="icon" type="image/svg+xml" href="openos-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,14 +40,46 @@
       <div class="section-header">
         <span class="section-number">// 01 · Features</span>
         <h2>核心特性</h2>
-        <p>继承 ChromiumOS 的完整技术栈并进行定制化改造，形成独立的开源操作系统发行版。</p>
+        <p>基于 Arch Linux 构建，从内核到桌面完全自主设计，形成独立的开源操作系统发行版。</p>
       </div>
       <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-card-icon">O</div>
+          <h3>OAK 安全基座</h3>
+          <p>内核级非对称加密与进程保护，不依赖 TPM 或任何专有硬件模块。支持 OAK-Seal 硬盘加密绑定，确保系统完整性。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-icon">U</div>
+          <h3>OPENUI 桌面</h3>
+          <p>基于 Wayland + wlroots 与 Qt/QML 的自研桌面环境，轻量高效，支持 NUI 设计规范。默认极简无广告，专注用户操作。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-icon">P</div>
+          <h3>OPT 统一包管理</h3>
+          <p>同时支持 pacman 与 apt 双后端，通过 OPT 统一调度。首次启动自动配置，支持软件命名空间隔离，避免依赖冲突。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-icon">V</div>
+          <h3>软件命名空间隔离</h3>
+          <p>内核级轻量虚拟化，为每个应用提供独立的文件系统视图。调用耗时 &lt; 1 秒，无需完整容器，资源占用极低。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-icon">C</div>
+          <h3>跨平台支持</h3>
+          <p>支持 x86-32、x86-64、ARM32、ARM64、LoongArch64 五大架构，覆盖从老旧设备到现代硬件的广泛范围。</p>
+        </div>
+
         <div class="feature-card">
           <div class="feature-card-icon">L</div>
-          <h3>啊帕次</h3>
-          <p>不是何意味啊?UwU?</p>
+          <h3>OPL 开源许可</h3>
+          <p>基于 OPENOS-PROJECT-LICENSE（OPL）发布，保障代码自由、设备自由、体验自由与操作自由。完全免费，不受硬件限制。</p>
         </div>
+
       </div>
     </div>
   </section>
@@ -59,7 +91,7 @@
       <img class="footer-brand-icon" src="openos-logo.svg" alt="OpenOS">
       OpenOS
     </a>
-    <p class="footer-tagline">基于 ARCH Liunx 的开源操作系统，由 OPENOS-dev 维护。</p>
+    <p class="footer-tagline">基于 Arch Linux 的开源操作系统，由 OPENOS-dev 维护。</p>
     <div class="footer-links">
       <a href="https://github.com/OPENOS-dev" target="_blank" rel="noopener">GitHub</a>
       <a href="about.html">关于我们</a>
