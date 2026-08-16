@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OpenOS 快速开始 - Linux 构建、macOS QEMU 运行、源码仓库、技术文档">
+<meta name="description" content="OpenOS 快速开始 - 构建指南、源码获取、QEMU 运行、镜像下载">
 <title>快速开始 - OpenOS</title>
 <link rel="icon" type="image/svg+xml" href="openos-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,16 +40,72 @@
       <div class="section-header">
         <span class="section-number">// 03 · Quick Start</span>
         <h2>快速开始</h2>
-        <p>在 Linux 环境下构建 OpenOS 系统镜像，或使用 QEMU 在 macOS 上快速体验。</p>
+        <p>在 Linux 或 macOS 上构建 OpenOS，或直接使用预编译镜像快速体验。</p>
       </div>
+
       <div class="entries-grid">
+
+        <!-- 卡片 1：从源码构建 -->
+        <a href="https://github.com/OPENOS-dev/OPENOS" target="_blank" rel="noopener" class="entry-card">
+          <span class="entry-card-label">Build from Source</span>
+          <h4>从源码构建</h4>
+          <p>克隆 OPENOS 仓库，使用 Arch Linux 环境编译内核、安全模块、桌面与包管理工具。</p>
+          <span class="entry-arrow">→ GitHub 仓库</span>
+        </a>
+
+        <!-- 卡片 2：QEMU 体验 -->
+        <a href="#" target="_blank" rel="noopener" class="entry-card">
+          <span class="entry-card-label">QEMU on macOS</span>
+          <h4>在 macOS 上运行</h4>
+          <p>通过 QEMU 虚拟机在 macOS 上直接运行 OpenOS，无需物理设备即可体验全部功能。</p>
+          <span class="entry-arrow">→ 操作指南</span>
+        </a>
+
+        <!-- 卡片 3：下载镜像 -->
+        <a href="#" target="_blank" rel="noopener" class="entry-card">
+          <span class="entry-card-label">Download ISO</span>
+          <h4>下载预编译镜像</h4>
+          <p>获取最新稳定版 ISO 镜像，烧录至 U 盘或直接用于虚拟机安装。</p>
+          <span class="entry-arrow">→ 镜像列表</span>
+        </a>
+
+        <!-- 卡片 4：核心项目 -->
+        <a href="projects.html" class="entry-card">
+          <span class="entry-card-label">Projects</span>
+          <h4>核心项目一览</h4>
+          <p>查看 OAK、OPENUI、OPT、NUI 规范等 OPENOS 子项目的独立仓库与文档。</p>
+          <span class="entry-arrow">→ 核心项目</span>
+        </a>
+
+        <!-- 卡片 5：Discord 社区 -->
+        <a href="https://discord.gg/xj6VCg7Na" target="_blank" rel="noopener" class="entry-card">
+          <span class="entry-card-label">Community</span>
+          <h4>加入社区</h4>
+          <p>在 Discord 与其他开发者交流，参与设计与开发讨论。</p>
+          <span class="entry-arrow">→ Discord</span>
+        </a>
+
+        <!-- 卡片 6：技术文档 -->
         <a href="#" target="_blank" rel="noopener" class="entry-card">
           <span class="entry-card-label">Documentation</span>
-          <h4>???</h4>
-          <p>何意味啊UwU?</p>
-          <span class="entry-arrow">啊帕次啊帕次啊帕次啊帕次</span>
+          <h4>技术文档</h4>
+          <p>查阅 OAK 安全模块、OPENUI 设计规范、OPT 使用手册等详细技术文档。</p>
+          <span class="entry-arrow">→ 文档站</span>
         </a>
+
       </div>
+
+      <!-- 简短的快速指令区域 -->
+      <div style="margin-top: 48px; background: var(--card-bg); border-radius: 16px; padding: 32px; border: 1px solid var(--border-color);">
+        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 12px;">快速构建命令</h3>
+        <div style="background: var(--code-bg); padding: 16px 20px; border-radius: 10px; font-family: 'JetBrains Mono', monospace; font-size: 14px; overflow-x: auto; color: var(--text-secondary);">
+          git clone https://github.com/OPENOS-dev/OPENOS.git<br>
+          cd OPENOS<br>
+          ./scripts/build.sh --target=x86_64
+        </div>
+        <p style="margin-top: 16px; font-size: 14px; color: var(--text-muted);">更多构建选项请参阅 <a href="https://github.com/OPENOS-dev/OPENOS/blob/main/README.md" target="_blank" rel="noopener" style="color: var(--accent);">README</a>。</p>
+      </div>
+
     </div>
   </section>
 </main>
@@ -60,7 +116,7 @@
       <img class="footer-brand-icon" src="openos-logo.svg" alt="OpenOS">
       OpenOS
     </a>
-    <p class="footer-tagline">基于 ARCH Liunx 的开源操作系统，由 OPENOS-dev 维护。</p>
+    <p class="footer-tagline">基于 Arch Linux 的开源操作系统，由 OPENOS-dev 维护。</p>
     <div class="footer-links">
       <a href="https://github.com/OPENOS-dev" target="_blank" rel="noopener">GitHub</a>
       <a href="about.html">关于我们</a>
